@@ -36,8 +36,8 @@ The agent follows a simple workflow:
 **1. Clone the repository**
 
 ```bash
-git clone YOUR_REPOSITORY_URL
-cd YOUR_REPOSITORY_NAME
+git clone THIS_REPO_URL
+cd THIS_REPO_NAME
 ```
 
 **2. Create a virtual environment**
