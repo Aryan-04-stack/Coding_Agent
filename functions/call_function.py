@@ -1,11 +1,11 @@
 import os
-from Coding_Agent.functions.files_info import get_files_info
-from Coding_Agent.functions.files_data import get_files_data
-from Coding_Agent.functions.write_file import write_file
-from Coding_Agent.functions.run_python import run_file
+from functions.files_info import get_files_info
+from functions.files_data import get_files_data
+from functions.write_file import write_file
+from functions.run_python import run_file
 from google.genai import types
 
-work_dir = "test"
+work_dir = "test_folder"
 def call_function(function_call_part , verbose = False):
     if verbose:
         print(f"Calling Function: {function_call_part.name} ({function_call_part.args})")

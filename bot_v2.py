@@ -1,13 +1,19 @@
 import os
 import sys
+
+# # Ensure parent directory is in sys.path so 'Coding_Agent' can be imported
+# parent_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+# if parent_dir not in sys.path:
+#     sys.path.insert(0, parent_dir)
+
 from dotenv import load_dotenv
 from google import genai
 from google.genai import types
-from Coding_Agent.functions.files_info import schema_get_files_info
-from Coding_Agent.functions.files_data import schema_get_files_data
-from Coding_Agent.functions.write_file import schema_write_file
-from Coding_Agent.functions.run_python import schema_run_file
-from Coding_Agent.functions.call_function import call_function
+from functions.files_info import schema_get_files_info
+from functions.files_data import schema_get_files_data
+from functions.write_file import schema_write_file
+from functions.run_python import schema_run_file
+from functions.call_function import call_function
 def main():
     load_dotenv()
     api_key = os.environ.get("api_key")
